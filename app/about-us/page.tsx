@@ -2,8 +2,8 @@
 
 export default function About() {
   return (
-    <main>
-      About
+    <main className="">
+      <h1></h1>
     </main>
   )
 };
