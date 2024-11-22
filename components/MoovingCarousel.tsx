@@ -21,7 +21,7 @@ export function CarouselSize() {
   ];
 
   return (
-    <div className="relative overflow-hidden w-full h-60">
+    <div className="relative overflow-hidden w-full ">
       <div className="flex animate-scroll gap-4">
         {mydata.map((src, index) => (
           <div
