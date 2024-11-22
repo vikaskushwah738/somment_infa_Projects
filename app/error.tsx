@@ -14,7 +14,7 @@ export default function Error({
   return (
     <div className='flex flex-col justify-center items-center h-screen'>
       <h2>Something went wrong! </h2>
-      <p className='text-red-500'>{error.message || 'An unknown error occurred.'}</p>
+      <p className='text-red-500 px-20'>{error.message || 'An unknown error occurred.'}</p>
       {error.digest && <p className='text-sm'>Error Digest: {error.digest}</p>}
     </div>
   );
