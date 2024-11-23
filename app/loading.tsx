@@ -8,7 +8,7 @@ export default function Loading() {
             <div className="absolute top-[calc(50%-0.125rem)] w-full h-1 bg-gray-600"></div>
             <div className="absolute top-[calc(50%+1rem)] w-full h-1 bg-gray-600"></div>
           </div>
-  
+          
           {/* Moving Cars */}
           <div className="absolute left-0 w-full h-full flex items-center justify-between animate-slide">
             <div className="w-6 h-6 bg-yellow-500 rounded-full shadow-lg"></div>
