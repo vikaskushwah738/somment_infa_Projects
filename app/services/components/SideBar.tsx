@@ -12,6 +12,14 @@ export default function SideBar() {
             url: "/services/falling-weight-deflectometer",
         },
         {
+            name:"Traffic Survey", 
+            url:"/services/traffic-survey"
+        },
+        {
+            name:"BBD", 
+            url:"/sevices/bbd" 
+        },
+        {
             name: "Retro-reflectivity Survey",
             url: "/services/retro-reflectivity-survey",
         },
@@ -62,9 +70,9 @@ export default function SideBar() {
         }
     ]
     return (
-        <aside className="lg:w-[30%] pt-20 lg:h-[900px] h-auto w-full border-r bg-blue-50 lg:px-0 md:px-10 px-5">
-            <h2 className="txet-4xl font-medium pt-5 pl-1">1. Indivisuals services</h2>
-            <ul className="flex flex-col space-y-2 w-full pt-3 pl-3">
+        <aside className="lg:w-[30%] pt-20 lg:h-[900px] h-auto w-full border-r bg-blue-50 lg:px-3 md:px-10 px-5">
+            <h2 className="txet-4xl font-medium pt-5 pl-1">1. Highways Survey</h2>
+            <ul className="flex flex-col space-y-2 w-full pt-3 pl-4">
 
                 {links.map((item) => {
                     return <li key={item.name}>
@@ -79,7 +87,7 @@ export default function SideBar() {
             </ul>
 
             <h2 className="txet-4xl font-medium pt-10 pl-1">2. Bundle of services</h2>
-            <ul className="flex flex-col space-y-2 w-full pt-3 pl-3">
+            <ul className="flex flex-col space-y-2 w-full pt-3 pl-4">
 
                 {link.map((item) => {
                     return <li key={item.name}>
