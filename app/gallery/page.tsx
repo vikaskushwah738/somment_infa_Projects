@@ -1,0 +1,51 @@
+import CarouselHome from "@/components/HomeCarousel";
+import first from '@/public/sommit-office.png'
+import second from '@/public/sommit-office-2.png'
+import third from '@/public/sommit-office-3.png'
+import OurClient from "@/components/OurClient";
+import Image from 'next/image';
+import Gallerys from '@/public/gallery.png'
+export default function Gallery() {
+    return (
+        <main className="lg:pt-28 md:pt-24 pt-20">
+            <section className=''>
+                <div className="relative w-full lg:h-[450px] md:h-[450px] h-[250px]">
+                    <Image
+                        src={Gallerys}
+                        alt="about us image"
+                        fill
+                        style={{ objectFit: 'fill' }}
+                        className='absolute'
+                        priority
+                    />
+                </div>
+            </section>
+            <h1 className="lg:px-20 md:px-10 px-5 pt-10 font-medium lg:text-3xl md:text-2xl text-xl">Gallery</h1>
+            <div className="lg:px-20 md:px-10 px-5 pt-10 py-10">
+                <CarouselHome items={
+                    [
+
+                        {
+                            src: 'https://res.cloudinary.com/dfbm8in4c/image/upload/v1732342697/sommit-office-3_r6psea.png',
+                            title: "Network Survey Vehicles (NSV)",
+                            type: "image"
+                        },
+                        {
+                            src: 'https://res.cloudinary.com/dfbm8in4c/image/upload/v1732342688/sommit-office-2_z7uwby.png',
+                            title: "Network Survey Vehicles (NSV)",
+                            type: "image"
+                        },
+                        {
+                            src: 'https://res.cloudinary.com/dfbm8in4c/image/upload/v1732342688/sommit-office_r08hyc.png',
+                            title: "Network Survey Vehicles (NSV)",
+                            type: "image"
+                        },
+
+                    ]
+                }
+                />
+            </div>
+        </main>
+    )
+}
+
