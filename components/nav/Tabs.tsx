@@ -14,7 +14,7 @@ const Tabs = () => {
         { title: "Projects", path: "/projects", hasDropdown: false },
         { title: "Gallery", path: "/gallery", hasDropdown: false },
         { title: "News", path: "/news", hasDropdown: false },
-        { title: "Get in Touch", path: "/contact-us", hasDropdown: false },
+        { title: "Contact us", path: "/contact-us", hasDropdown: false },
     ];
 
     const handleMouseEnter = () => {
