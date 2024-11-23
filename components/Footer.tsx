@@ -63,7 +63,7 @@ export default function Footer() {
                     <h4 className="text-lg font-semibold mb-2">REACH US</h4>
                     <p className="text-sm">3-floor Saroor Nagar Rd, beside Indian Overseas Bank, Rajyalaxmi Nagar, SBH Colony, L.B. Nagar,<br />Hyderabad, Telangana, 500074</p>
                     <p className="text-sm">Email: info@sommitinfra.com</p>
-                    <p className="text-sm">Phone: (123) 456-789</p>
+                    <p className="text-sm">Phone: +91 4048447585</p>
                     <h5 className='pt-7 font-medium text-lg'>Follow Us</h5>
                     <div className="flex gap-5 justify-center items-center mb-10 pt-3">
                         <Link
