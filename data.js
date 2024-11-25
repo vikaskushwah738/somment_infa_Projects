@@ -1,12 +1,12 @@
 const dummyData = [
     {
-      imageSrc: 'https://res.cloudinary.com/dopolikju/image/upload/v1732529362/nsv-sommet_wtrqr1.png',
+      imageSrc: 'https://res.cloudinary.com/dopolikju/image/upload/v1732529824/NSV_nkf4y8.png',
       heading: 'Network survey vehicle (NSV)',
       description: 'This is a short description of card 1.',
       url: 'https://example.com/card1',
     },
     {
-      imageSrc: 'https://res.cloudinary.com/dfbm8in4c/image/upload/v1732361058/highways-3_dfg8dp.png',
+      imageSrc: 'https://res.cloudinary.com/dopolikju/image/upload/v1732532574/SOMMET-removebg-preview_zaza0v.png',
       heading: 'Falling Weight Deflectometer (FWD)',
       description: 'This is a short description of card 2.',
       url: 'https://example.com/card2',
