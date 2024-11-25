@@ -26,17 +26,17 @@ export default function Gallery() {
                     [
 
                         {
-                            src: 'https://res.cloudinary.com/dfbm8in4c/image/upload/v1732342697/sommit-office-3_r6psea.png',
+                            src: 'https://res.cloudinary.com/dopolikju/image/upload/v1732516133/sommet-office-3_jxghaq.png',
                             title: "Network Survey Vehicles (NSV)",
                             type: "image"
                         },
                         {
-                            src: 'https://res.cloudinary.com/dfbm8in4c/image/upload/v1732342688/sommit-office-2_z7uwby.png',
+                            src: 'https://res.cloudinary.com/dopolikju/image/upload/v1732516134/sommet-office-2_shlyi1.png',
                             title: "Network Survey Vehicles (NSV)",
                             type: "image"
                         },
                         {
-                            src: 'https://res.cloudinary.com/dfbm8in4c/image/upload/v1732342688/sommit-office_r08hyc.png',
+                            src: 'https://res.cloudinary.com/dopolikju/image/upload/v1732516134/sommet-office_st2azx.png',
                             title: "Network Survey Vehicles (NSV)",
                             type: "image"
                         },
