@@ -9,7 +9,7 @@ export default function ContactUs() {
       <section className=''>
         <div className="relative w-full lg:h-[450px] md:h-[450px] h-[250px]">
           <Image
-            src={Contact}
+            src='https://res.cloudinary.com/dopolikju/image/upload/v1732537114/contact_gqbvqw.webp'
             alt="about us image"
             fill
             style={{ objectFit: 'fill' }}
