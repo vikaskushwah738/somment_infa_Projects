@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Logo from '@/public/highways.jpg'
+import Logo from '@/public/sommet-logo.png'
 import Link from 'next/link';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaPinterest } from 'react-icons/fa';
 export default function Footer() {
@@ -43,18 +43,19 @@ export default function Footer() {
                     </ul>
                 </section> 
 
-            {/*  Our Services */}
+                 {/*  Our Services */}
                 <section className="mb-6 md:mb-0">
                     <h4 className="text-lg font-semibold mb-2">OUR SERVICES</h4>
                     <ul className="list-none space-y-1">
-                        <li><a href="/service1" className="text-sm hover:underline leading-none">Structural Health Monitoring</a></li>
-                        <li><a href="/service1" className="text-sm hover:underline">Detailed Project Reports</a></li>
-                        <li><a href="/service1" className="text-sm hover:underline">Quality Control/Assurance</a></li>
-                        <li><a href="/service1" className="text-sm hover:underline">Road Safety Audits and Action Plans</a></li>
-                        <li><a href="/service1" className="text-sm hover:underline">Traffic Engineering & Surveys</a></li>
+                        <li><a href="/services/technical-due-diligence" className="text-sm hover:underline leading-none">Technical Due Diligence</a></li>
+                        <li><a href="/services/detailed-engineering-and-dpr" className="text-sm hover:underline">Detailed Engineering / DPR</a></li>
+                        <li><a href="/services/o-and-m-assessment" className="text-sm hover:underline">O & M Assessment (Operation and Maintenance Assessment)</a></li>
+                        <li><a href="/services/road-safety-audit-and-action-plans" className="text-sm hover:underline">Road Safety Audits and Action Plans</a></li>
                         <li><a href="/service2" className="text-sm hover:underline">Pavement Investigation, Design and Review</a></li>
                         <li><a href="/service3" className="text-sm hover:underline">Structural Condition Assessment & NDT</a></li>
-                        <li><a href="/service4" className="text-sm hover:underline">Material Testing Laboratory Services</a></li>
+                        <li><a href="/services/proof-checking" className="text-sm hover:underline">Proof Checking</a></li>
+                        <li><a href="/services/project-management-consultancy" className="text-sm hover:underline">Project Management Consultancy</a></li>
+                        <li><a href="/services/material-testing-laboratory" className="text-sm hover:underline">Material Testing Laboratory Services</a></li>
                     </ul>
                 </section>
 
@@ -67,37 +68,37 @@ export default function Footer() {
                     <h5 className='pt-7 font-medium text-lg'>Follow Us</h5>
                     <div className="flex gap-5 justify-center items-center mb-10 pt-3">
                         <Link
-                            href="https://www.facebook.com/soEffortsSolution/"
+                            href="https://www.facebook.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Facebook account for So Efforts Solution"
+                            aria-label=""
                             title="So Efforts Solution Facebook"
                         >
                             <FaFacebook size={30} />
                         </Link>
                         <Link
-                            href="https://instagram.com/"
+                            href="https://instagram.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Instagram account for So Efforts Solution "
+                            aria-label="Instagram account  "
                             title="So Efforts Solution Instagram"
                         >
                             <FaInstagram size={30} />
                         </Link>
                         <Link
-                            href="https://www.linkedin.com/company/so-efforts-solution/"
+                            href="https://www.linkedin.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Linkedin account for So Efforts Solution"
+                            aria-label="Linkedin account "
                             title="So Efforts Solution Linkedin"
                         >
                             <FaLinkedin size={30} />
                         </Link>
                         <Link
-                            href="https://twitter.com/so_efforts_solu"
+                            href="https://twitter.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Twitter account for So Efforts Solution"
+                            aria-label="Twitter account "
                             title="So Efforts Solution Twitter"
                         >
                             <FaTwitter size={30} />
