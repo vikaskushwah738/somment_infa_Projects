@@ -22,8 +22,8 @@ export default function Home() {
             type: "image"
           },
           {
-            src: `https://res.cloudinary.com/dfbm8in4c/image/upload/v1732361058/highways-3_dfg8dp.png`,
-            title: "Network Survey Vehicles (NSV)",
+            src: `https://res.cloudinary.com/dopolikju/image/upload/v1732605752/coreutting_cleanup_qqlobj.png`,
+            title: "core cutting ",
             type: "image"
           },
           
