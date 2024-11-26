@@ -4,4 +4,10 @@ export type NavLinks = {
     hasDropdown:boolean
   };
 
+  export type CardProps = {
+    imageSrc: string;
+    heading: string;
+    description: string;
+    url:string;
+  }
   
