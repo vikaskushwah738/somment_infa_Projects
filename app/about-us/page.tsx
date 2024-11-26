@@ -8,7 +8,7 @@ export default function About() {
       <section className=''>
         <div className="relative w-full lg:h-[450px] md:h-[450px] h-[250px]">
           <Image
-            src={aboutImage}
+            src='https://res.cloudinary.com/dopolikju/image/upload/v1732595126/mordern-city_zpjc3d.png'
             alt="about us image"
             fill
             style={{ objectFit: 'fill' }}
