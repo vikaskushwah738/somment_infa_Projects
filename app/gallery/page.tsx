@@ -1,7 +1,4 @@
 import CarouselHome from "@/components/HomeCarousel";
-import first from '@/public/sommit-office.png'
-import second from '@/public/sommit-office-2.png'
-import third from '@/public/sommit-office-3.png'
 import OurClient from "@/components/OurClient";
 import Image from 'next/image';
 import Gallerys from '@/public/gallery.png'
@@ -11,7 +8,7 @@ export default function Gallery() {
             <section className=''>
                 <div className="relative w-full lg:h-[450px] md:h-[450px] h-[250px]">
                     <Image
-                        src={Gallerys}
+                        src='https://res.cloudinary.com/dopolikju/image/upload/v1732537079/gallery_vhivpw.png'
                         alt="about us image"
                         fill
                         style={{ objectFit: 'fill' }}
