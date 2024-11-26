@@ -21,13 +21,11 @@ export default function ContactForm() {
 
     return (
        
-            <div className= "g:w-1/2 bg-white shadow-2xl rounded-xl w-full max-w-lg p-8">
-                <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-6">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400">
-                    Have Questions?
-                    </span>
+           <div className='lg:w-1/2 flex flex-col text-blue-950 lg:pt-0 pt-16 lg:px-0 md:px-16 px-5'>
+                <h2 className="text-xl font-light text-blue-600 mb-6">
+                    Have Questions? Contact Our Highway Consultancy Team
                 </h2>
-                <form onSubmit={handleSubmit} className="space-y-3">
+                <form onSubmit={handleSubmit} className="space-y-3 w-full">
                     <div>
                         <label
                             htmlFor="username"
