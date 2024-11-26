@@ -13,7 +13,7 @@ export default function SideBar() {
         },
         {
             name:"BBD Survey", 
-            url:"/sevices/bbd-survey" 
+            url:"/services/bbd-survey",
         },
         {
             name: "Retro-reflectivity Survey",
@@ -36,18 +36,13 @@ export default function SideBar() {
 
     const link = [
         {
-            name: 'Detailed Engineering / DPR (Detailed Project Report)',
-            link: '/services/detailed-engineering-and-dpr',
-        },
-        {
             name: 'Technical Due Diligence',
             link: '/services/technical-due-diligence',
 
         },
         {
-            name: 'Project Management Consultancy (PMC)',
-            link: '/services/project-management-consultancy',
-
+            name: 'Detailed Engineering / DPR (Detailed Project Report)',
+            link: '/services/detailed-engineering-and-dpr',
         },
         {
             name: 'O&M Assessment (Operation and Maintenance Assessment)',
@@ -55,13 +50,18 @@ export default function SideBar() {
 
         },
         {
-            name: 'Road Safety Audit',
-            link: '/services/road-safety-audit',
+            name: 'Road Safety Audit and Action Plans',
+            link: '/services/road-safety-audit-and-action-plans',
 
         },
         {
             name: 'Proof Checking',
             link: '/services/proof-checking',
+
+        },
+        {
+            name: 'Project Management Consultancy (PMC)',
+            link: '/services/project-management-consultancy',
 
         },
         {
