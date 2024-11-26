@@ -36,7 +36,7 @@ export default function Network_Survey_Vehicle() {
 
             <section className="py-10">
                 <h2 className="lg:text-3xl md:text-2xl text-xl">Essential Attributes of Network Survey Vehicle</h2>
-                <ul className="space-y-2 pl-5 pt-5 list-disc">
+                <ul className="space-y-2 pl-7 pt-5 list-disc">
                     <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, consequatur adipisci? Molestiae quis vero, voluptates fugiat et aut soluta culpa, nemo, unde laudantium accusantium hic atque?</li>
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque non similique eaque eius fuga quisquam consequatur neque explicabo odio at?</li>
                     <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid nobis consectetur libero quo iste atque sequi ea ad animi? Impedit exercitationem veritatis numquam quae, dolorem nisi.</li>
@@ -45,7 +45,7 @@ export default function Network_Survey_Vehicle() {
             </section>
             <section className="py-10">
                 <h2 className="lg:text-3xl md:text-2xl text-xl">Advantages of the Network Survey Vehicle</h2>
-                <ul className="space-y-2 pl-5 pt-5 list-disc">
+                <ul className="space-y-2 pl-7 pt-5 list-disc">
                     <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, consequatur adipisci? Molestiae quis vero, voluptates fugiat et aut soluta culpa, nemo, unde laudantium accusantium hic atque?</li>
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque non similique eaque eius fuga quisquam consequatur neque explicabo odio at?</li>
                     <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid nobis consectetur libero quo iste atque sequi ea ad animi? Impedit exercitationem veritatis numquam quae, dolorem nisi.</li>
@@ -55,7 +55,7 @@ export default function Network_Survey_Vehicle() {
             <section className="py-10">
                 <h2 className="lg:text-3xl md:text-2xl text-xl">Utilization of Network Survey Vehicle Services </h2>
                  <p className="pt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, distinctio praesentium libero fuga ducimus obcaecati in mollitia ab aliquam animi repellat saepe reiciendis ullam cupiditate magnam sint necessitatibus vel excepturi corrupti eum sequi ad enim. Suscipit, dolores.</p>
-                <ul className="space-y-2 pl-5 pt-3 list-disc">
+                <ul className="space-y-2 pl-7 pt-3 list-disc">
                     <li>Lorem ipsum dolor sit amet consectetur, adipisicing</li>
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing </li>
                     <li>Lorem ipsum dolor, sit amet consectetur adi</li>
