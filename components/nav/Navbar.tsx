@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image';
-import Logo from '@/public/highways.png'
+import Logo from '@/public/sommet-logo.png'
 import { IoMdMenu } from 'react-icons/io';
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { useState } from 'react';
