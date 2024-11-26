@@ -12,12 +12,8 @@ export default function SideBar() {
             url: "/services/falling-weight-deflectometer",
         },
         {
-            name:"Traffic Survey", 
-            url:"/services/traffic-survey"
-        },
-        {
-            name:"BBD", 
-            url:"/sevices/bbd" 
+            name:"BBD Survey", 
+            url:"/sevices/bbd-survey" 
         },
         {
             name: "Retro-reflectivity Survey",
@@ -26,6 +22,10 @@ export default function SideBar() {
         {
             name: "Ground Penetrating Radar (GPR)",
             url: "/services/ground-penetrating-radar",
+        },
+        {
+            name:"Traffic Surveys", 
+            url:"/services/traffic-survey"
         },
         {
             name: "Automatic Traffic Counter & Classifier (ATCC)",
@@ -71,7 +71,7 @@ export default function SideBar() {
     ]
     return (
         <aside className="lg:w-[30%] pt-20 lg:h-[900px] h-auto w-full border-r bg-blue-50 lg:px-3 md:px-10 px-5">
-            <h2 className="txet-4xl font-medium pt-5 pl-1">1. Highways Survey</h2>
+            <h2 className="txet-4xl font-medium pt-5 pl-1">1. Highway Surveys</h2>
             <ul className="flex flex-col space-y-2 w-full pt-3 pl-4">
 
                 {links.map((item) => {
