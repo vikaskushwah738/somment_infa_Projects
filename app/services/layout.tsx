@@ -7,7 +7,7 @@ export default function Layout({ children }: any) {
             <section className='lg:pt-28 md:pt-24 pt-20 text-blue-950'>
                 <div className="relative w-full lg:h-[450px] md:h-[450px] h-[250px]">
                     <Image
-                        src={services}
+                        src='https://res.cloudinary.com/dopolikju/image/upload/v1732595142/tech-city_jx0y96.png'
                         alt="about us image"
                         fill
                         style={{ objectFit: 'fill' }}
