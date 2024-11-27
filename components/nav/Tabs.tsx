@@ -41,60 +41,57 @@ const Tabs = () => {
                     <Tab key={link.title} {...link} />
                     {link.hasDropdown && dropdownOpen && link.title === "Services" && (
                         <div
-                            className="absolute left-0 mt-7 bg-blue-400 border border-gray-300 shadow-lg z-10 w-72 px-3"
+                            className="absolute left-0 mt-7 bg-blue-400 border border-gray-300 shadow-lg z-10 w-72 px-3 py-2"
                             onMouseEnter={handleMouseEnter} // Keep dropdown open when hovering over it
                             onMouseLeave={handleMouseLeave} // Close dropdown when mouse leaves
                         >
-                            <ul className="flex flex-col space-y-1">
+                            <ul className="flex flex-col space-y-2">
                                 <li>
                                     <Link
                                         className="block text-gray-900 hover:underline"
-                                        href="/service1"
+                                        href="/services/technical-due-diligence"
                                     >
-                                        Structural Health Monitoring
-                                        
+                                       Technical Due Diligence
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
                                         className="block  text-gray-900 hover:underline"
-                                        href="/service2"
+                                        href="/services/detailed-engineering-and-dpr"
                                     >
-                                        Detailed Project Reports
-                                        
+                                    Detailed Engineering / DPR (Detailed Project Report)
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
                                         className="block text-gray-900 hover:underline"
-                                        href="/service3"
+                                        href="/services/o-and-m-assessment"
                                     >
-                                        Quality Control/Assurance
-                                        
+                                    O & M Assessment (Operation and Maintenance Assessment)
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
                                         className="block  text-gray-900 hover:underline"
-                                        href="/service3"
+                                        href="/services/road-safety-audit-and-action-plans"
                                     >
-                                     Road Safety Audits and Action Plans  
+                                        Road Safety Audits and Action Plans
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
                                         className="block  text-gray-900 hover:underline"
-                                        href="/service3"
+                                        href="/services/proof-checking"
                                     >
-                                         Traffic Engineering & Surveys
+                                      Proof Checking
                                     </Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link
                                         className="block  text-gray-900 hover:underline"
                                         href="/service3"
                                     >
-                                   Pavement Investigation, Design and Review
+                                        Pavement Investigation, Design and Review
                                     </Link>
                                 </li>
                                 <li>
@@ -102,15 +99,23 @@ const Tabs = () => {
                                         className="block text-gray-900 hover:underline"
                                         href="/service3"
                                     >
-                                    Structural Condition Assessment & NDT
+                                        Structural Condition Assessment & NDT
+                                    </Link>
+                                </li> */}
+                                
+                                <li>
+                                    <Link
+                                     className="block  text-gray-900 hover:underline"
+                                     href='/services/project-management-consultancy'>
+                                        Project Management Consultancy
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
                                         className="block  text-gray-900 hover:underline"
-                                        href="/service3"
+                                        href="/services/material-testing-laboratory"
                                     >
-                                    Material Testing Laboratory Services 
+                                        Material Testing Laboratory Services
                                     </Link>
                                 </li>
                             </ul>
@@ -124,4 +129,3 @@ const Tabs = () => {
 
 export default Tabs;
 
-                                        
