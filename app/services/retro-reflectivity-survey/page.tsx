@@ -10,24 +10,20 @@ export default function Retro_Reflectivity() {
             
             </section>
             <section className=" pt-10 py-10">
-                <CarouselHome items={
+            <CarouselHome items={
                     [
 
                         {
-                            src: 'https://res.cloudinary.com/dfbm8in4c/image/upload/v1732342697/sommit-office-3_r6psea.png',
+                            src: 'https://res.cloudinary.com/dopolikju/image/upload/v1732612047/Retro-reflectivity_hhzylp.png',
                             title: "Network Survey Vehicles (NSV)",
                             type: "image"
                         },
                         {
-                            src: 'https://res.cloudinary.com/dfbm8in4c/image/upload/v1732342688/sommit-office-2_z7uwby.png',
+                            src: 'https://res.cloudinary.com/dopolikju/image/upload/v1732612790/retro-refectivity-3_bmpd4e.png',
                             title: "Network Survey Vehicles (NSV)",
                             type: "image"
                         },
-                        {
-                            src: 'https://res.cloudinary.com/dfbm8in4c/image/upload/v1732342688/sommit-office_r08hyc.png',
-                            title: "Network Survey Vehicles (NSV)",
-                            type: "image"
-                        },
+                        
 
                     ]
                 }
