@@ -39,7 +39,7 @@ export default function Footer() {
                         <li><a href="/about" className="text-sm hover:underline">Projects</a></li>
                         <li><a href="/about" className="text-sm hover:underline">Gallery</a></li>
                         <li><a href="/about" className="text-sm hover:underline">News</a></li>
-                        <li><a href="/privacy-policy" className="text-sm hover:underline">Career</a></li>
+                        {/* <li><a href="/privacy-policy" className="text-sm hover:underline">Career</a></li> */}
                     </ul>
                 </section> 
 
