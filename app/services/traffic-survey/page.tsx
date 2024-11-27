@@ -6,28 +6,19 @@ export default function Traffic_Survey() {
             <section>
                 <h1 className="lg:text-4xl md:text-3xl text-2xl font-medium">Traffic Survey</h1>
                  <p className="pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae tenetur quod sapiente exercitationem praesentium itaque quasi ut reiciendis perspiciatis, et sunt incidunt. Ut consequuntur adipisci rerum maiores fugit illo in sed nam rem maxime voluptatibus modi, dolore suscipit officia laboriosam amet iusto ad, blanditiis qui reiciendis voluptatum quia! Debitis?</p>
-                 <p className="pt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ullam, magni accusamus inventore odit neque a iusto iure laudantium modi, quasi aut itaque, sequi corrupti? Rem nam sed officiis recusandae sequi optio dicta distinctio. Harum libero repudiandae ut eligendi adipisci ad, quo nam maiores ratione sed, repellat veniam cum, nihil optio aspernatur molestiae debitis. Amet, quis eaque blanditiis vero odit cupiditate inventore, minus enim mollitia sit consequuntur molestiae. Culpa!</p>
+                 <p className="pt-3 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ullam, magni accusamus inventore odit neque a iusto iure laudantium modi, quasi aut itaque, sequi corrupti? Rem nam sed officiis recusandae sequi optio dicta distinctio. Harum libero repudiandae ut eligendi adipisci ad, quo nam maiores ratione sed, repellat veniam cum, nihil optio aspernatur molestiae debitis. Amet, quis eaque blanditiis vero odit cupiditate inventore, minus enim mollitia sit consequuntur molestiae. Culpa!</p>
             
             </section>
             <section className=" pt-10 py-10">
-                <CarouselHome items={
+            <CarouselHome items={
                     [
 
                         {
-                            src: 'https://res.cloudinary.com/dfbm8in4c/image/upload/v1732342697/sommit-office-3_r6psea.png',
+                            src: 'https://res.cloudinary.com/dopolikju/image/upload/v1732613639/traffic-survey-2_diyysb.jpg',
                             title: "Network Survey Vehicles (NSV)",
                             type: "image"
                         },
-                        {
-                            src: 'https://res.cloudinary.com/dfbm8in4c/image/upload/v1732342688/sommit-office-2_z7uwby.png',
-                            title: "Network Survey Vehicles (NSV)",
-                            type: "image"
-                        },
-                        {
-                            src: 'https://res.cloudinary.com/dfbm8in4c/image/upload/v1732342688/sommit-office_r08hyc.png',
-                            title: "Network Survey Vehicles (NSV)",
-                            type: "image"
-                        },
+                        
 
                     ]
                 }

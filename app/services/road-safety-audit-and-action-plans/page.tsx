@@ -11,7 +11,6 @@ export default function Road_Safety_Audit() {
             <section className=" pt-10 py-10">
             <CarouselHome items={
                     [
-
                         {
                             src: 'https://res.cloudinary.com/dopolikju/image/upload/v1732516133/sommet-office-3_jxghaq.png',
                             title: "Network Survey Vehicles (NSV)",
@@ -21,7 +20,7 @@ export default function Road_Safety_Audit() {
                             src: 'https://res.cloudinary.com/dopolikju/image/upload/v1732516134/sommet-office-2_shlyi1.png',
                             title: "Network Survey Vehicles (NSV)",
                             type: "image"
-                        },
+                                                                                                                                                                                                },
                         {
                             src: 'https://res.cloudinary.com/dopolikju/image/upload/v1732516134/sommet-office_st2azx.png',
                             title: "Network Survey Vehicles (NSV)",
@@ -45,7 +44,7 @@ export default function Road_Safety_Audit() {
             </section>
             <section className="py-10">
                 <h2 className="lg:text-3xl md:text-2xl text-xl">Advantages of the Road Safety Audit</h2>
-                <ul className="space-y-2 pl-5 pt-5 list-disc">
+                <ul className="space-y-2 pl-7 pt-5 list-disc">
                     <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, consequatur adipisci? Molestiae quis vero, voluptates fugiat et aut soluta culpa, nemo, unde laudantium accusantium hic atque?</li>
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque non similique eaque eius fuga quisquam consequatur neque explicabo odio at?</li>
                     <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid nobis consectetur libero quo iste atque sequi ea ad animi? Impedit exercitationem veritatis numquam quae, dolorem nisi.</li>
@@ -55,7 +54,7 @@ export default function Road_Safety_Audit() {
             <section className="py-10">
                 <h2 className="lg:text-3xl md:text-2xl text-xl">Utilization of Road Safety Audit Services </h2>
                  <p className="pt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, distinctio praesentium libero fuga ducimus obcaecati in mollitia ab aliquam animi repellat saepe reiciendis ullam cupiditate magnam sint necessitatibus vel excepturi corrupti eum sequi ad enim. Suscipit, dolores.</p>
-                <ul className="space-y-2 pl-5 pt-3 list-disc">
+                <ul className="space-y-2 pl-7 pt-3 list-disc">
                     <li>Lorem ipsum dolor sit amet consectetur, adipisicing</li>
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing </li>
                     <li>Lorem ipsum dolor, sit amet consectetur adi</li>
