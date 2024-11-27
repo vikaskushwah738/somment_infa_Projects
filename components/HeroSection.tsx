@@ -11,7 +11,7 @@ export default function HeroSection() {
             <div className="lg:w-1/2 relative">
                 <Image
                     alt="Sommit Infra Projects Private Limited Logo"
-                    src={Hero}
+                    src="https://res.cloudinary.com/dopolikju/image/upload/v1732594828/hero_mri6d8.jpg"
                     fill
                     style={{ objectFit: 'fill' }}
                     className="absolute rounded-2xl bg-white"
