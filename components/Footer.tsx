@@ -51,8 +51,8 @@ export default function Footer() {
                         <li><a href="/services/detailed-engineering-and-dpr" className="text-sm hover:underline">Detailed Engineering / DPR</a></li>
                         <li><a href="/services/o-and-m-assessment" className="text-sm hover:underline">O & M Assessment (Operation and Maintenance Assessment)</a></li>
                         <li><a href="/services/road-safety-audit-and-action-plans" className="text-sm hover:underline">Road Safety Audits and Action Plans</a></li>
-                        <li><a href="/service2" className="text-sm hover:underline">Pavement Investigation, Design and Review</a></li>
-                        <li><a href="/service3" className="text-sm hover:underline">Structural Condition Assessment & NDT</a></li>
+                        {/* <li><a href="/service2" className="text-sm hover:underline">Pavement Investigation, Design and Review</a></li>
+                        <li><a href="/service3" className="text-sm hover:underline">Structural Condition Assessment & NDT</a></li> */}
                         <li><a href="/services/proof-checking" className="text-sm hover:underline">Proof Checking</a></li>
                         <li><a href="/services/project-management-consultancy" className="text-sm hover:underline">Project Management Consultancy</a></li>
                         <li><a href="/services/material-testing-laboratory" className="text-sm hover:underline">Material Testing Laboratory Services</a></li>
