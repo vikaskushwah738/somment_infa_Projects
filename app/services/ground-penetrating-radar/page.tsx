@@ -9,24 +9,15 @@ export default function Ground_Penetrating_Radar() {
                  <p className="pt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ullam, magni accusamus inventore odit neque a iusto iure laudantium modi, quasi aut itaque, sequi corrupti? Rem nam sed officiis recusandae sequi optio dicta distinctio. Harum libero repudiandae ut eligendi adipisci ad, quo nam maiores ratione sed, repellat veniam cum, nihil optio aspernatur molestiae debitis. Amet, quis eaque blanditiis vero odit cupiditate inventore, minus enim mollitia sit consequuntur molestiae. Culpa!</p>
             </section>
             <section className=" pt-10 py-10">
-                <CarouselHome items={
+            <CarouselHome items={
                     [
 
                         {
-                            src: 'https://res.cloudinary.com/dfbm8in4c/image/upload/v1732342697/sommit-office-3_r6psea.png',
+                            src: 'https://res.cloudinary.com/dopolikju/image/upload/v1732611693/gpr-sommet_l8lbwb.jpg',
                             title: "Network Survey Vehicles (NSV)",
                             type: "image"
                         },
-                        {
-                            src: 'https://res.cloudinary.com/dfbm8in4c/image/upload/v1732342688/sommit-office-2_z7uwby.png',
-                            title: "Network Survey Vehicles (NSV)",
-                            type: "image"
-                        },
-                        {
-                            src: 'https://res.cloudinary.com/dfbm8in4c/image/upload/v1732342688/sommit-office_r08hyc.png',
-                            title: "Network Survey Vehicles (NSV)",
-                            type: "image"
-                        },
+                       
 
                     ]
                 }
