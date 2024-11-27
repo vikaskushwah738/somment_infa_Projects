@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Navbar } from "@/components/nav/Navbar";
+
 import Footer from "@/components/Footer";
+import { Navbar } from "@/components/nav/Navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,13 +27,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
        >
-        <Navbar/>  
+        <Navbar/>   
         {children}   
-       <Footer/> 
+       <Footer/>  
       </body>
     </html>
   );

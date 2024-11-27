@@ -3,16 +3,14 @@ import CarouselHome from "@/components/HomeCarousel";
 import OurClient from "@/components/OurClient";
 import Services from "@/components/Services";
 import WhyCooiseUs from "@/components/WhyChooseUs";
-import highway from '@/public/highway.png'
-import highway_2 from '@/public/highways-2.png'
-import highway_3 from '@/public/highways-3.png'
+
 export default function Home() {
   return (
-      <main className="lg:pt-28 md:pt-24 pt-20">
-       <CarouselHome items={
+    <main className="lg:pt-28 md:pt-24 pt-20">
+      <CarouselHome items={
         [
           {
-            src:"https://res.cloudinary.com/dfbm8in4c/image/upload/v1732361050/highway_iisgej.png",
+            src: "https://res.cloudinary.com/dfbm8in4c/image/upload/v1732361050/highway_iisgej.png",
             title: "Network Survey Vehicles (NSV)",
             type: "image"
           },
@@ -26,18 +24,18 @@ export default function Home() {
             title: "core cutting ",
             type: "image"
           },
-          
+
         ]
-       }
-       />
-       
-       
-       <HeroSection/>
-       <Services/>
-       <OurClient/> 
-       <WhyCooiseUs/>
-      </main> 
-      
-      
+      }
+      />
+
+
+      <HeroSection />
+      <Services />
+      <OurClient />
+      <WhyCooiseUs />
+    </main>
+
+
   );
 }
