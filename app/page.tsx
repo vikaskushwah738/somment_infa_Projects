@@ -28,8 +28,6 @@ export default function Home() {
         ]
       }
       />
-
-
       <HeroSection />
       <Services />
       <OurClient />
