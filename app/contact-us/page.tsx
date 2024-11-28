@@ -2,7 +2,6 @@ import ContactForm from "@/components/ContactForm";
 import Image from 'next/image';
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
-import Contact from '@/public/contact.webp'
 export default function ContactUs() {
   return (
     <main className="lg:pt-28 md:pt-24 pt-20">
@@ -23,7 +22,7 @@ export default function ContactUs() {
           <h2 className="text-3xl font-bold text-blue-600  mb-6">
             <span className="border-b-2 border-gray-950 ">Offic</span>e Address
           </h2>
-          <div className="space-y-5">
+          <div className="space-y-4">
             <h3 className="text-2xl font-semibold text-blue-700">
               Sommet Infra Projects PVT LTD
             </h3>
@@ -38,27 +37,27 @@ export default function ContactUs() {
               <p>Hyderabad, Telangana, 500074</p>
             </div>
             <div>
-                <h4 className="text-lg font-medium">Email</h4>
-                <p className="flex items-center gap-3 pt-3">
+              <h4 className="text-lg font-medium">Email</h4>
+              <p className="flex items-center gap-3 ">
                 <MdOutlineEmail />
 
-                  <a
-                    href="mailto:srinivasulu.kunchala@kdmengineers.com"
-                    className="text-blue-500 hover:underline"
-                  >
-                    info@sommetinfra.com
-                  </a>
-                </p>
-           </div>
+                <a
+                  href="mailto:srinivasulu.kunchala@kdmengineers.com"
+                  className="text-blue-500 hover:underline"
+                >
+                  info@sommetinfra.com
+                </a>
+              </p>
+            </div>
             <div>
-            <h4 className="text-lg font-medium ">Contact</h4>
-            <p className="flex items-center gap-3 pt-3"><FaPhoneAlt /> phone : +91 4048447585</p>
+              <h4 className="text-lg font-medium ">Contact</h4>
+              <p className="flex items-center gap-3"><FaPhoneAlt /> phone : +91 4048447585</p>
             </div>
 
 
           </div>
         </div>
-         <ContactForm /> 
+        <ContactForm />
       </section>
 
     </main>
