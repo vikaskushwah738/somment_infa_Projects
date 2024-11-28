@@ -15,12 +15,12 @@ export default function Home() {
             type: "image"
           },
           {
-            src: `https://res.cloudinary.com/dfbm8in4c/image/upload/v1732361050/highways-2_hboh9n.png`,
+            src: `https://res.cloudinary.com/dopolikju/image/upload/v1732612047/Retro-reflectivity_hhzylp.png`,
             title: "Network Survey Vehicles (NSV)",
             type: "image"
           },
           {
-            src: `https://res.cloudinary.com/dopolikju/image/upload/v1732605752/coreutting_cleanup_qqlobj.png`,
+            src: `https://res.cloudinary.com/dopolikju/image/upload/v1732604970/bbd-survays_etknym.jpg`,
             title: "core cutting ",
             type: "image"
           },
