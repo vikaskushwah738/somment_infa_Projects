@@ -70,7 +70,7 @@ export default function SideBar() {
         }
     ]
     return (
-        <aside className="lg:w-[30%] pt-20 lg:h-[900px] h-auto w-full border-r bg-blue-50 lg:px-3 md:px-10 px-5">
+        <aside className="lg:w-[30%] pt-20 lg:h-[900px] h-auto w-full border-r bg-blue-50 lg:px-3 md:px-10 px-5 pb-6">
             <h2 className="txet-4xl font-medium pt-5 pl-1">1. Highway Surveys</h2>
             <ul className="flex flex-col space-y-2 w-full pt-3 pl-4">
 
