@@ -7,7 +7,7 @@ interface TabProps extends NavLinks {
 
 export const Tab = ({ title, path, onDropdownToggle }: TabProps) => {
   return (
-    <Link onClick={onDropdownToggle} href={path} className="text-gray-900 hover:underline cursor-pointer">
+    <Link onClick={onDropdownToggle} href={path} className="text-blue-950 hover:underline cursor-pointer p-2.5 ">
       {title}
     </Link>
   );
