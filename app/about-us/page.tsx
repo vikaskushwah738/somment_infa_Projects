@@ -18,10 +18,13 @@ export default function About() {
         </div>
       </section>
       <section className="lg:px-20 md:px-10 px-5 py-10">
-        <h1 className="lg:text-4xl md:text-3xl text-2xl font-medium ">About company</h1>
-        <h2 className="text-xl font-light pt-3">Sommet Infra Projects Private Limited</h2>
+        <h1 className="lg:text-4xl md:text-3xl text-2xl font-medium">About company</h1>
+        <h2 className="text-xl font-light pt-3">Sommet Infra Projects PVT LTD</h2>
+        <p className="pt-3 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et id porro laboriosam repudiandae possimus veniam architecto dicta nobis explicabo blanditiis dolorum non, rerum eligendi ut magnam at laborum molestias similique voluptas saepe error! Consectetur sequi necessitatibus numquam.</p>
+        <p className="pt-3 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reiciendis nostrum deleniti odit quos maxime delectus? Quia, ipsum aperiam nisi, sunt sequi optio corrupti, unde debitis laudantium maxime dolore ut? A, quo qui. Quidem eius hic dicta ea deleniti nesciunt?</p>
         <p className="pt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae natus ullam expedita quaerat dolor esse veniam voluptatem architecto accusantium adipisci! Veniam unde repellat esse magni, itaque quae maxime incidunt deserunt voluptate vero neque, voluptatum fuga quis modi mollitia soluta, ipsum ad enim. Magni eaque aut, at, recusandae ab tenetur consectetur eius culpa provident similique quod minus. Quaerat eius quas dolorem, neque porro veritatis fugiat dignissimos voluptatibus consequuntur, obcaecati perferendis reiciendis aspernatur adipisci. Blanditiis fugit nostrum odit natus officiis?</p>
         <p className="pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit tempora nulla et dolorum aspernatur iure vel! Optio perspiciatis architecto sit fugit corporis quisquam, aliquam sint, neque animi non iure sequi dolore rerum, reiciendis dolores suscipit aperiam. Tempora quos illo harum ullam ex perferendis sed, autem voluptas corporis porro! Optio, perferendis reiciendis! Unde facere ad saepe! Ex error facilis nesciunt? Ratione voluptatibus officia minus perferendis?</p>
+        
       </section>
       <section className="lg:px-20 md:px-10 px-5 py-10 lg:flex lg:gap-5">
         <div className="lg:w-1/2">
