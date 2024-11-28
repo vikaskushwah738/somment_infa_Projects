@@ -1,14 +1,14 @@
 import Image from 'next/image';
 import Logo from '@/public/sommet-logo.png'
 import Link from 'next/link';
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaPinterest } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 export default function Footer() {
     return (
-        <footer className="bg-blue-400 text-white">
-            <div className="p-2 md:px-10 md:py-10 grid px-5 md:grid-cols-[1.5fr_1fr_1fr_1.5fr_1.5fr] gap-5">
+        <footer className=" text-white">
+            <div className="bg-blue-400 md:px-10 md:pt-10 md:py-0 py-5 grid px-5 md:grid-cols-[1.5fr_1fr_1fr_1.5fr_1.5fr] gap-5">
 
                 {/* Logo and Description */}
-                <section className="mb-12 md:mb-0">
+                <section className="mb-6 md:mb-0">
                     <div className="flex justify-center pb-6 pt-12">
                         <Image
                             src={Logo}
@@ -17,7 +17,7 @@ export default function Footer() {
                             width={150}
                         />
                     </div>
-                    <p className="txt-lg font-medium">Sommit Infra Projects Private Limited</p>
+                    <p className="txt-lg font-medium">Sommet Infra Projects PVT LTD</p>
                     <p className="text-sm">We provide high-quality solutions to meet your needs.</p>
                 </section>
 
@@ -60,10 +60,10 @@ export default function Footer() {
                 </section>
 
                 {/* <!-- Reach Us --> */}
-                <section className="mb-16 md:mb-0"> 
+                <section className="mb-6 md:mb-0"> 
                     <h4 className="text-lg font-semibold mb-2">REACH US</h4>
                     <p className="text-sm">3-floor Saroor Nagar Rd, beside Indian Overseas Bank, Rajyalaxmi Nagar, SBH Colony, L.B. Nagar,<br />Hyderabad, Telangana, 500074</p>
-                    <p className="text-sm">Email: info@sommitinfra.com</p>
+                    <p className="text-sm pt-5">Email: info@sommitinfra.com</p>
                     <p className="text-sm">Phone: +91 4048447585</p>
                     <h5 className='pt-7 font-medium text-lg'>Follow Us</h5>
                     <div className="flex gap-5 justify-center items-center mb-10 pt-3">
@@ -106,6 +106,10 @@ export default function Footer() {
                     </div>
                 </section>
 
+            </div>
+            <div className='bg-[#4897f8] lg:h-12 h-20 text-gray-50 lg:flex items-center lg:justify-between md:px-10 px-5 lg:py-0 py-3 '>
+            <p className='text-xs'>Copyright © 2024 Sommet Infra Projects PVT LTD. All Rights Reserved.</p>
+            <p className='text-xs lg:pt-0 pt-3'>Design and Development by godday</p>
             </div>
         </footer>
 
