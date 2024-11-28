@@ -3,7 +3,7 @@ import CarouselHome from "@/components/HomeCarousel";
 
 export default function Automatic_Traffic_Classified_Count() {
   return (
-      <div className="w-[70%] pt-20 lg:px-0 md:px-10 px-5">
+      <div className="lg:w-[70%] pt-20 lg:px-0 md:px-10 px-5">
           <section>
               <h1 className="lg:text-4xl md:text-3xl text-2xl font-medium">Automatic Traffic Classified Count (ATCC)</h1>
               <p className="pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae tenetur quod sapiente exercitationem praesentium itaque quasi ut reiciendis perspiciatis, et sunt incidunt. Ut consequuntur adipisci rerum maiores fugit illo in sed nam rem maxime voluptatibus modi, dolore suscipit officia laboriosam amet iusto ad, blanditiis qui reiciendis voluptatum quia! Debitis?</p>

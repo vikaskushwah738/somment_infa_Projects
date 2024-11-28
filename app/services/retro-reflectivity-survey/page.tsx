@@ -2,11 +2,11 @@ import CarouselHome from "@/components/HomeCarousel";
 
 export default function Retro_Reflectivity() {
     return (
-        <div className="w-[70%] pt-20 lg:px-0 md:px-10 px-5">
+        <div className="lg:w-[70%] pt-20 lg:px-0 md:px-10 px-5">
             <section>
                 <h1 className="lg:text-4xl md:text-3xl text-2xl font-medium">Retro Reflectivity</h1>
-                 <p className="pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae tenetur quod sapiente exercitationem praesentium itaque quasi ut reiciendis perspiciatis, et sunt incidunt. Ut consequuntur adipisci rerum maiores fugit illo in sed nam rem maxime voluptatibus modi, dolore suscipit officia laboriosam amet iusto ad, blanditiis qui reiciendis voluptatum quia! Debitis?</p>
-                 <p className="pt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ullam, magni accusamus inventore odit neque a iusto iure laudantium modi, quasi aut itaque, sequi corrupti? Rem nam sed officiis recusandae sequi optio dicta distinctio. Harum libero repudiandae ut eligendi adipisci ad, quo nam maiores ratione sed, repellat veniam cum, nihil optio aspernatur molestiae debitis. Amet, quis eaque blanditiis vero odit cupiditate inventore, minus enim mollitia sit consequuntur molestiae. Culpa!</p>
+                 <p className="pt-5 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae tenetur quod sapiente exercitationem praesentium itaque quasi ut reiciendis perspiciatis, et sunt incidunt. Ut consequuntur adipisci rerum maiores fugit illo in sed nam rem maxime voluptatibus modi, dolore suscipit officia laboriosam amet iusto ad, blanditiis qui reiciendis voluptatum quia! Debitis?</p>
+                 <p className="pt-3 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ullam, magni accusamus inventore odit neque a iusto iure laudantium modi, quasi aut itaque, sequi corrupti? Rem nam sed officiis recusandae sequi optio dicta distinctio. Harum libero repudiandae ut eligendi adipisci ad, quo nam maiores ratione sed, repellat veniam cum, nihil optio aspernatur molestiae debitis. Amet, quis eaque blanditiis vero odit cupiditate inventore, minus enim mollitia sit consequuntur molestiae. Culpa!</p>
             
             </section>
             <section className=" pt-10 py-10">
