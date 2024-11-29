@@ -86,7 +86,7 @@ export default function NewsForm() {
   return (
     <div className="w-[75%]">
       <h1 className="text-2xl pb-5 px-5 font-medium pt-10">Add You News Here</h1>
-      <div className="pb-5 md:px-10 flex justify-center">
+      <section className="pb-5 md:px-10 flex justify-center">
         <form onSubmit={handleSubmit} className="px-5 border-2 border-blue-500 rounded-xl  w-[70%]">
           <div className="pb-2 pt-5">
             <label htmlFor="title" className="flex text-blue-950 mb-1 gap-1">
@@ -181,7 +181,7 @@ export default function NewsForm() {
             />
           </div>
         </form>
-      </div >
+      </section>
     </div >
   )
 }

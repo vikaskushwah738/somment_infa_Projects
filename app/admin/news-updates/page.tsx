@@ -7,7 +7,7 @@ const NewUpdateForm = () => {
   return (
 
     <div className="w-[75%] px-5 p-5">
-      <div className="flex justify-between items-center py-5 px-8 bg-blue-100 rounded-xl">
+      <div className="flex justify-between items-center py-5 px-8 rounded-xl bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500">
         <h1 className="text-2xl font-medium">News</h1>
         <Link href={'/admin/news-updates/news-update-form'} className="bg-gradient-to-r from-blue-50 via-blue-100 to-blue-400 rounded-full px-4 py-2 flex gap-3 items-center ">
             <MdAddCircleOutline className="text-2xl text-blue-800 hover:text-blue-950" />
