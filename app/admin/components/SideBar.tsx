@@ -22,7 +22,7 @@ export default function SideBar() {
         },
         {
             name: 'Category',
-            link: '/admin/addyears',
+            link: '/admin/news-category',
             icon: <MdUpdate />
         },
         {
