@@ -11,7 +11,7 @@ export default function Category () {
     useEffect(() => {
         const fetchYearData = async () => {
             try {
-                const response = await fetch('/api/create-year'); 
+                const response = await fetch('/api/category'); 
                 if (!response.ok) {
                     throw new Error('Failed to fetch year data');
                 }
