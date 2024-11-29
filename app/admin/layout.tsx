@@ -7,7 +7,7 @@ export default function Layout({ children }: any) {
         <main className='lg:pt-28 md:pt-24 pt-20 flex'>
             <SideBar />
             {children}
-            <Toaster />
+       
         </main>
     )
 }
