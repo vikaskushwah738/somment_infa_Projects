@@ -20,7 +20,7 @@ export async function POST(req: Request) {
         });
         console.log('customer data save sucessfully', name)
         return NextResponse.json(project, { status: 200 });
-    } catch (error) {
+    } catch (error :any) {
         console.log("Error in API:", error);
         return NextResponse.json({ message: 'Something went wrong, try again later' }, { status: 500 });
     }
@@ -31,7 +31,7 @@ export async function GET() {
         const clientinfo = await prisma.userData.findMany();
         return NextResponse.json(clientinfo, {status: 200 });
     } catch (error) {
-        console.error('Error fetching client info:', error);
+        console.log('Error fetching client info:', error);
         return NextResponse.json({ message: 'Clould not find client info' }, { status: 500 })
     }
 }
