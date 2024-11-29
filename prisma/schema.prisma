@@ -8,9 +8,30 @@ datasource db {
 }
 
 model UserData {
-  id       String    @id @default(auto()) @map("_id") @db.ObjectId
-  name     String    
-  email    String
-  phone    String
-  subject  String     
+  id           String    @id @default(auto()) @map("_id") @db.ObjectId
+  name         String    
+  email        String
+  phone        String
+  createdAt    DateTime @default(now())
+  subject      String     
+}
+
+model NewsData {
+    id             String    @id @default(auto()) @map("_id") @db.ObjectId
+    title          String
+    slug           String
+    description    String
+    content        String
+    imageUrl       String
+    publicId       String
+    createdAt      DateTime @default(now())
+    category       String
+    newsTypeData   NewsTypeData? @relation(fields: [category], references: [category])
+}
+
+model NewsTypeData {
+    id             String    @id @default(auto()) @map("_id") @db.ObjectId
+    category       String    @unique
+    news           NewsData[]
+    newsIDs        String[] @db.ObjectId
 }
