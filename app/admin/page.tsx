@@ -27,8 +27,8 @@ const  Admin =() => {
 
   
 
-  if (loading) return <div className='w-[75%] h-screen justify-center flex items-center'>Loading...</div>;
-  if (error) return <div className='w-[75%] h-screen justify-center flex items-center'>Error: {error}</div>;
+  if (loading) return <div className='w-[80%] h-screen justify-center flex items-center'>Loading...</div>;
+  if (error) return <div className='w-[80%] h-screen justify-center flex items-center'>Error: {error}</div>;
 
   return (
     <div className=" w-[75%] px-10">
