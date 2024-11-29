@@ -32,8 +32,11 @@ const  Admin =() => {
 
   return (
     <div className=" w-[75%] px-10">
-      <h1 className='text-4xl font-medium text-center py-6'>Dashboard</h1>
-      <table className='py-10 w-full border-2 border-blue-400'>
+     
+      <h1 className='mt-5 rounded-xl text-center py-6 bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500'>
+      <span className="bg-gradient-to-b from-gray-50  via-blue-100 to-blue-500 inline-block text-transparent bg-clip-text text-5xl font-medium ">Dashboard</span>  
+       </h1>
+      <table className='py-10 w-full border-2 border-blue-400 mt-5'>
         <thead className='border-2 border-blue-400'>
           <tr>
             <th className='w-[7%] border-2 border-blue-400'>S. no.</th>
