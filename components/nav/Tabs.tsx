@@ -34,7 +34,7 @@ const Tabs = () => {
             {links.map((link) => (
                 <li
                     key={link.title}
-                    className="lg:border-none lg:block flex justify-center border-b-2 border-white  lg:max-w-max w-full"
+                    className="relative lg:border-none lg:block flex justify-center border-b-2 border-white  lg:max-w-max w-full"
                     onMouseEnter={link.hasDropdown ? handleMouseEnter : undefined}
                     onMouseLeave={link.hasDropdown ? handleMouseLeave : undefined}
                 >

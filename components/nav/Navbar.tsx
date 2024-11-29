@@ -30,7 +30,7 @@ export const Navbar = () => {
           {/* {session && <Logout />} */}
         </ul>
       </div>
-      <div className="text-blue-950  text-3xl lg:hidden">
+      <div className="text-blue-950 text-3xl lg:hidden">
         <button onClick={toggleNavbar}>
           <span className="sr-only">{isOpen ? 'Close navigation' : 'Open navigation'}</span>
           {isOpen ? <IoMdCloseCircleOutline  /> : <IoMdMenu />}
@@ -38,8 +38,8 @@ export const Navbar = () => {
       </div>
     </nav>
     {isOpen && (
-      <ul onClick={toggleNavbar} className="lg:hidden fixed top-0 right-0 space-y-8 w-[75%] h-screen text-blue-950  bg-blue-400 bg-opacity-70 z-10 flex flex-col items-center pt-28 md:px-10 px-5">
-        <Tabs/> 
+      <ul onClick={toggleNavbar} className="lg:hidden fixed top-0 right-0 space-y-5 w-[75%] h-screen text-gray-700  bg-blue-400 bg-opacity-70 z-10 flex flex-col items-center pt-28 md:px-10 px-5">
+          <Tabs/> 
       </ul>
     )}
   </header>
