@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { MdAddCircleOutline } from "react-icons/md";
 import { Metadata } from "next";
-
+import CategoryData from "../components/CategoryData";
 
 const NewCategory = () => {
   return (
@@ -14,7 +14,7 @@ const NewCategory = () => {
             <span className="font-semibold text-xl text-white hover:text-blue-950">ADD</span>
         </Link>
       </div>
-
+      <CategoryData/>
     </div>
 
   )
