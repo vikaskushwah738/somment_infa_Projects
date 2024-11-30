@@ -19,7 +19,7 @@ model UserData {
 model NewsData {
     id             String    @id @default(auto()) @map("_id") @db.ObjectId
     title          String
-    slug           String
+    slug           String @unique
     description    String
     content        String
     imageUrl       String
