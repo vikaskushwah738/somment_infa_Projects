@@ -60,6 +60,6 @@ const CategoryData = () => {
     )
 }
 
-export default  CategoryData
+export default CategoryData
 
 
