@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { AiOutlineDashboard } from "react-icons/ai";
 import { FaThList, FaDatabase } from "react-icons/fa";
-import { MdPostAdd , MdUpdate} from "react-icons/md";
+import { MdPostAdd, MdUpdate } from "react-icons/md";
 
 export default function SideBar() {
     const link = [
@@ -32,9 +32,11 @@ export default function SideBar() {
         }
     ]
     return (
-        <aside className="w-[25%] pt-20 lg:h-[900px] h-auto  border-r lg:px-3 md:px-10 px-5 bg-blue-50">
-            <h1 className="pb-3 text-2xl font-medium flex justify-center">Admin</h1>
-            <ul className="flex flex-col gap-6 w-full">
+        <aside className="w-[25%] lg:h-[900px] h-auto  border-r lg:px-3 md:px-10 px-5 bg-blue-50">
+            <h2 className='rounded-xl mt-5 text-center py-6 bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500'>
+                <span className="bg-gradient-to-b from-gray-50  via-blue-100 to-blue-500 inline-block text-transparent bg-clip-text text-5xl font-medium ">Admin</span>
+            </h2>
+            <ul className="flex flex-col gap-6 w-full pt-5">
                 {link.map((item) => {
                     return <Link
                         key={item.name}
