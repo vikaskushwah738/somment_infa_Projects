@@ -30,3 +30,13 @@ export async function POST(req: Request) {
         )
     }
 }  
+
+export async function GET() {
+    try {
+        const News = await prisma.newsData.findMany();
+        return NextResponse.json(News, { status: 200 });
+    } catch (error) {
+        console.log(error)
+        return NextResponse.json({ message: 'Clould not find News Posts' }, { status: 500 })
+    }
+}
