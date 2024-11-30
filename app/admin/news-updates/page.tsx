@@ -1,11 +1,9 @@
 import Link from "next/link";
 import { MdAddCircleOutline } from "react-icons/md";
-import { Metadata } from "next";
-
+import AdminNewsFatch from "../components/Newsfatch";
 
 const NewUpdateForm = () => {
   return (
-
     <div className="w-[75%] px-5 p-5">
       <div className="flex justify-between items-center py-7 px-8 rounded-xl bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500">
         <h1 className="text-2xl font-medium">News</h1>
@@ -14,7 +12,10 @@ const NewUpdateForm = () => {
             <span className="font-semibold text-xl text-white hover:text-blue-950">ADD</span>
         </Link>
       </div>
-
+      <section className=" flex-wrap flex gap-5 py-10">
+      <AdminNewsFatch></AdminNewsFatch>
+      </section>
+  
     </div>
 
   )

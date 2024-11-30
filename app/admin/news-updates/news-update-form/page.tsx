@@ -13,6 +13,9 @@ export default function NewsForm() {
   const editor = useRef(null);
   const [content, setContent] = useState('');
   const [title, setTitle] = useState('');
+  const [slug, setSlug] = useState('');
+  const [category, setCategory] = useState(' ');
+  const [description, setNewsDescription] = useState('');
   const [imageUrl, setImageUrl] = useState('');
   const [publicId, setPublicId] = useState('');
 
@@ -34,7 +37,7 @@ export default function NewsForm() {
   const removeImg = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch('/api/delete-image', {
+      const response = await fetch('http://localhost:3000/api/delete-image', {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
@@ -49,20 +52,26 @@ export default function NewsForm() {
       setPublicId("");
       toast.success("project successfully deletd")
       console.log("project successfully deletd")
-    } catch (error) {
-      console.log(error);
+    } catch (error:any) {
+      console.log('image choluld not deteled', error);
       toast.error('Error removing image');
     }
   };
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    // Trim and format the slug before sending it to the server
+    const formattedSlug = slug
+      .trim() // Remove leading and trailing whitespace
+      .toLowerCase() // Convert the slug to lowercase
+      .replace(/[^\w\s]+/g, '') // Remove special characters (keep alphanumeric and spaces)
+      .replace(/\s+/g, '-') // Replace spaces with hyphens
 
-    const res = await fetch('/api/create-news', {
+    const res = await fetch('/api/news-upload', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ title, content, imageUrl, publicId }),
+      body: JSON.stringify({ title, content, imageUrl, publicId, category, slug: formattedSlug, description, }),
     });
     const toastId = toast.loading('Please wait...');
     if (res.ok) {
@@ -72,21 +81,27 @@ export default function NewsForm() {
       setContent('');
       setImageUrl('');
       setPublicId('');
+      setCategory('');
+      setNewsDescription('');
+      setSlug('');
     } else {
       const errorData = await res.json();
       toast.error('Somethink went wrong please try again', { id: toastId })
     }
   };
   const config = useMemo(() => ({
-    readonly: false, // all options from https://xdsoft.net/jodit/docs/
-    placeholder: 'Start typing you content...',  // You can set a default value here
+    readonly: false,
+    placeholder: 'Start typing you content...',
   }), []);
 
 
   return (
-    <div className="w-[75%]">
-      <h1 className="text-2xl pb-5 px-5 font-medium pt-10">Add You News Here</h1>
-      <section className="pb-5 md:px-10 flex justify-center">
+    <div className="w-[75%] px-10">
+      <h1 className='mt-5 rounded-xl text-center py-6 bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500'>
+        <span className="bg-gradient-to-b from-gray-50  via-blue-100 to-blue-500 inline-block text-transparent bg-clip-text text-5xl font-medium ">Add You News Here</span>
+      </h1>
+
+      <section className="pb-5 md:px-10 flex justify-center pt-5">
         <form onSubmit={handleSubmit} className="px-5 border-2 border-blue-500 rounded-xl  w-[70%]">
           <div className="pb-2 pt-5">
             <label htmlFor="title" className="flex text-blue-950 mb-1 gap-1">
@@ -109,8 +124,8 @@ export default function NewsForm() {
             <input
               type='text'
               id="newsSlug"
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
+              value={slug}
+              onChange={(e) => setSlug(e.target.value)}
               required
               placeholder="News Slug, which is a URL shown on screen when you open this page."
               className="w-full px-3 py-1 border border-gray-300 rounded-xl focus:outline-none bg-gray-100"
@@ -123,30 +138,35 @@ export default function NewsForm() {
             <input
               type='text'
               id="newsDescription"
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
+              value={description}
+              onChange={(e) => setNewsDescription(e.target.value)}
               required
               placeholder="write a small description of you content"
               className="w-full px-3 py-1 border border-gray-300 rounded-xl focus:outline-none bg-gray-100"
             />
           </div>
-
-           <div className='pb-2 mt-3'>
+          {/* category */}
+          <div className='pb-2 '>
+            <label htmlFor="category" className="flex text-blue-950 mb-1 gap-1">
+              Category <span className="text-red-700">*</span>
+            </label>
             <select
-              id="year"
+              id="category"
               required
-              // value={ category }
-              // onChange={(e) => setYear(e.target.value)}
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
               className="w-full px-3 py-1 border border-gray-300 rounded-xl bg-gray-100 appearance-none pr-10"
             >
               <option value="">
-                Choose a Category <span className="text-red-700">*</span>
+                Choose a Category
               </option>
               <Category />
             </select>
-          </div> 
-
+          </div>
           <div className="pb-2 z-20">
+            <label htmlFor="content" className="flex text-blue-950 mb-1 gap-1">
+              Content <span className="text-red-700">*</span>
+            </label>
             <JoditEditor
               ref={editor}
               value={content}
@@ -160,7 +180,7 @@ export default function NewsForm() {
             <CldUploadButton
               className={`w-full border-2 border-dotted grid h-48 place-items-center bg-slate-100 rounded-2xl relative ${imageUrl && 'pointer-events-none'}`}
               onSuccess={handleImageUpload}
-              uploadPreset='eclat-engineering'>
+              uploadPreset='sommet-infra'>
               <div>
                 <IoMdImage className='text-3xl' />
               </div>

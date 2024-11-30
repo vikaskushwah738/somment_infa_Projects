@@ -10,11 +10,11 @@ export default function SideBar() {
             link: '/admin',
             icon: <AiOutlineDashboard />
         },
-        {
-            name: 'Careers Form',
-            link: '/admin/careersinfo',
-            icon: <FaDatabase />
-        },
+        // {
+        //     name: 'Careers Form',
+        //     link: '/admin/careersinfo',
+        //     icon: <FaDatabase />
+        // },
         {
             name: 'News',
             link: '/admin/news-updates',
@@ -25,11 +25,11 @@ export default function SideBar() {
             link: '/admin/news-category',
             icon: <MdUpdate />
         },
-        {
-            name: 'Projects',
-            link: '/admin/projectsUpdates',
-            icon: <FaThList />
-        }
+        // {
+        //     name: 'Projects',
+        //     link: '/admin/projectsUpdates',
+        //     icon: <FaThList />
+        // }
     ]
     return (
         <aside className="w-[25%] lg:h-[900px] h-auto  border-r lg:px-3 md:px-10 px-5 bg-blue-50">

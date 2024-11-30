@@ -10,12 +10,12 @@ cloudinary.v2.config({
 
 export async function DELETE(req: Request) {
  
-    const {publicID} =await req.json();
-    if(!publicID){
+    const {publicId} =await req.json();
+    if(!publicId){
         return NextResponse.json({message: 'publicid did not exist'}, {status: 400})
     }
     try{
-        const result= await cloudinary.v2.uploader.destroy(publicID);
+        const result= await cloudinary.v2.uploader.destroy(publicId);
         if (result.result === 'ok') {
             console.log("image delete sucessfully")
             return  NextResponse.json({ message: 'Image deleted successfully' },
