@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 const NewsFatch = () => {
   const [news, setNews] = useState<NewsData[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -19,8 +19,9 @@ const NewsFatch = () => {
         
         const data = await response.json();
         setNews(data);
-      } catch (error: any) {
-        setError(error.message);
+      } catch (error) {
+        const e = error as Error; 
+        setError(e.message);
       } finally {
         setLoading(false);
       }

@@ -15,17 +15,17 @@ export default function Services() {
                         {
                             src: 'https://res.cloudinary.com/dopolikju/image/upload/v1732516133/sommet-office-3_jxghaq.png',
                             title: "Network Survey Vehicles (NSV)",
-                            type: "image"
+                           
                         },
                         {
                             src: 'https://res.cloudinary.com/dopolikju/image/upload/v1732516134/sommet-office-2_shlyi1.png',
                             title: "Network Survey Vehicles (NSV)",
-                            type: "image"
+                            
                         },
                         {
                             src: 'https://res.cloudinary.com/dopolikju/image/upload/v1732516134/sommet-office_st2azx.png',
                             title: "Network Survey Vehicles (NSV)",
-                            type: "image"
+                            
                         },
 
                     ]

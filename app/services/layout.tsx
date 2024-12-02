@@ -1,7 +1,11 @@
 import SideBar from "./components/SideBar";
 import Image from 'next/image';
+import { ReactNode } from 'react';
 
-export default function Layout({ children }: any) {
+interface LayoutProps {
+    children: ReactNode;
+  }
+export default function Layout({ children }: LayoutProps) {
     return (
         <main>
             <section className='lg:pt-28 md:pt-24 pt-20 text-blue-950'>
