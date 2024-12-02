@@ -20,7 +20,7 @@ export async function POST(req: Request) {
         });
         console.log('customer data save sucessfully', name)
         return NextResponse.json(project, { status: 200 });
-    } catch (error :any) {
+    } catch (error) {
         console.log("Error in API:", error);
         return NextResponse.json({ message: 'Something went wrong, try again later' }, { status: 500 });
     }
