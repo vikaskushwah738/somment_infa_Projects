@@ -15,7 +15,6 @@ import useEmblaCarousel from 'embla-carousel-react';
 interface CarouselItem {
   src: string;      // Use 'string' for the image or video URL
   title: string;
-  type: "image" | "video";  // Specify the type to be either 'image' or 'video'
   subitem?: ReactNode;
 }
 
@@ -54,7 +53,7 @@ export default function CarouselHome ({
       }),
     ]}>
       <CarouselContent>
-        {items.map(({ src,  title, subitem, type }, idx) => (
+        {items.map(({ src,  title, subitem }, idx) => (
           <CarouselItem
             key={idx}
             className={cn(
@@ -63,7 +62,7 @@ export default function CarouselHome ({
               className
             )}
           >
-            {type === "image" && (
+            
               <Image 
                 src={src} 
                 alt={title} 
@@ -71,17 +70,8 @@ export default function CarouselHome ({
                 style={{ objectFit: 'fill' }}
                 className="absolute" 
               />
-            )}
-            {type === "video" && (
-              <iframe
-                width="100%"
-                height="100%"
-                src={src + "?mute=1" + "&rel=0"}
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            )}
+           
+            
             {subitem}
           </CarouselItem>
         ))}
