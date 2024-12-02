@@ -1,6 +1,5 @@
 import OurClient from "@/components/OurClient";
 import Image from 'next/image';
-import aboutImage from '@/public/mordern-city.png'
 
 export default function About() {
   return (
