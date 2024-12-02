@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { MdAddCircleOutline } from "react-icons/md";
-import { Metadata } from "next";
 import CategoryData from "../components/CategoryData";
 
 const NewCategory = () => {
