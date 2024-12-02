@@ -39,7 +39,7 @@ const CategoryData = () => {
       </thead>
       <tbody >
         {category.length > 0 ? (
-          category.map((user: any, index: any) => (
+          category.map((user, index) => (
             <tr key={user.id} className='border-2 border-blue-400'>
               <th className='w-[5%] border-2 border-blue-400 '>{index + 1}.</th>
               <td className='w-[80%] border-2 border-blue-400 px-3'>{user.category}</td>
