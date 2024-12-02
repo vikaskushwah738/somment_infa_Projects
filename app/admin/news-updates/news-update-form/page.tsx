@@ -52,7 +52,7 @@ export default function NewsForm() {
       setPublicId("");
       toast.success("project successfully deletd")
       console.log("project successfully deletd")
-    } catch (error:any) {
+    } catch (error) {
       console.log('image choluld not deteled', error);
       toast.error('Error removing image');
     }
