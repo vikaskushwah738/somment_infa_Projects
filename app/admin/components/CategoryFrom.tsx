@@ -6,7 +6,7 @@ export const CategoryFrom = () => {
     const [category, setCategory]=useState('')
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        const info=process.env.NEXT_PUBLIC_BASE_URL
+        
         const toastId = toast.loading('Please wait...');
         try {
           const res = await fetch(`/api/category`, {
@@ -18,7 +18,7 @@ export const CategoryFrom = () => {
           });
     
           if (res.ok) {
-            const data = await res.json();
+            // const data = await res.json();
             toast.success('Category add successfully', { id: toastId });
             setCategory('');
             
@@ -27,7 +27,8 @@ export const CategoryFrom = () => {
             console.log('Category form error',errorData)
             toast.error('Something went wrong, please try again', { id: toastId });
           }
-        } catch (error :any) {
+        } catch (error ) {
+          console.log('somethink went wrong', error)
           toast.error('Network error, please try again', { id: toastId });
         }
     
