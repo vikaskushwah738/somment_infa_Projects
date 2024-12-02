@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { AiOutlineDashboard } from "react-icons/ai";
-import { FaThList, FaDatabase } from "react-icons/fa";
 import { MdPostAdd, MdUpdate } from "react-icons/md";
 
 export default function SideBar() {
