@@ -6,7 +6,7 @@ import { NewsTypeData } from "@prisma/client";
 const CategoryData = () => {
   const [category, setCategory] = useState<NewsTypeData[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -17,8 +17,9 @@ const CategoryData = () => {
         }
         const data = await response.json();
         setCategory(data);
-      } catch (error: any) {
-        setError(error.message);
+      } catch (error: unknown) {
+        const e = error as Error; 
+        setError(e.message);
       } finally {
         setLoading(false);
       }
