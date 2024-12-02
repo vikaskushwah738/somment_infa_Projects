@@ -1,6 +1,7 @@
 import { prisma } from "@/prisma/prisma";
 import { NextResponse } from "next/server";
 
+// GET handler for fetching the news post
 export async function GET(req: Request, { params }: { params: { slug: string } }): Promise<NextResponse> {
     try {
         const { slug } = params;
@@ -16,14 +17,13 @@ export async function GET(req: Request, { params }: { params: { slug: string } }
         }
 
         return NextResponse.json(news_post, { status: 200 });
-    } catch (error) {
+    } catch (error: unknown) {  // Handle error type as `unknown`
         console.error('Something went wrong:', error);
         return NextResponse.json({ message: 'Could not retrieve news post' }, { status: 500 });
     }
 }
 
-
-
+// DELETE handler for deleting the news post
 export async function DELETE(req: Request, { params }: { params: { slug: string } }): Promise<NextResponse> {
     try {
         const { slug } = params;
@@ -44,11 +44,8 @@ export async function DELETE(req: Request, { params }: { params: { slug: string 
         });
 
         return NextResponse.json({ message: 'News post deleted successfully' }, { status: 200 });
-    } catch (error) {
+    } catch (error: unknown) {  // Handle error type as `unknown`
         console.error('Something went wrong:', error);
         return NextResponse.json({ message: 'Could not delete news post' }, { status: 500 });
     }
 }
-
-
-
