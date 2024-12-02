@@ -75,7 +75,7 @@ export default function NewsForm() {
     });
     const toastId = toast.loading('Please wait...');
     if (res.ok) {
-      const data = await res.json();
+      // const data = await res.json();
       toast.success('news added successfully', { id: toastId })
       setTitle('');
       setContent('');
@@ -85,7 +85,7 @@ export default function NewsForm() {
       setNewsDescription('');
       setSlug('');
     } else {
-      const errorData = await res.json();
+      // const errorData = await res.json();
       toast.error('Somethink went wrong please try again', { id: toastId })
     }
   };
