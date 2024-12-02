@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
 export default function ContactForm() {
     const [name, setName] = useState('');
@@ -31,6 +31,7 @@ export default function ContactForm() {
                 toast.error(errorData.message || "Submission failed.", { id: toastId });
             }
         } catch (error) {
+            console.log('somethink went wrong', error)
             toast.error("Network error. Please try again later.", { id: toastId });
         }
     };

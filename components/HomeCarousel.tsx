@@ -11,14 +11,23 @@ import Image from "next/image";
 import { ReactNode, useState, useEffect } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from 'embla-carousel-react';
-import { Button } from "@/components/ui/button";
+
+interface CarouselItem {
+  src: string;      // Use 'string' for the image or video URL
+  title: string;
+  type: "image" | "video";  // Specify the type to be either 'image' or 'video'
+  subitem?: ReactNode;
+}
+
+interface CarouselHomeProps {
+  items: CarouselItem[];  // Use the CarouselItem[] type for the 'items' array
+  className?: string;
+}
+
 export default function CarouselHome ({
   items,
   className = "",
-}: {
-  className?: string;
-  items: { src: any; title: string; type: string; href?: string; subitem?: ReactNode }[];
-}) {
+}: CarouselHomeProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -45,7 +54,7 @@ export default function CarouselHome ({
       }),
     ]}>
       <CarouselContent>
-        {items.map(({ src, href = "#", title, subitem, type }, idx) => (
+        {items.map(({ src,  title, subitem, type }, idx) => (
           <CarouselItem
             key={idx}
             className={cn(
@@ -55,12 +64,13 @@ export default function CarouselHome ({
             )}
           >
             {type === "image" && (
-                <Image 
+              <Image 
                 src={src} 
                 alt={title} 
                 fill 
                 style={{ objectFit: 'fill' }}
-                className="absolute" />
+                className="absolute" 
+              />
             )}
             {type === "video" && (
               <iframe
@@ -71,7 +81,6 @@ export default function CarouselHome ({
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
-
             )}
             {subitem}
           </CarouselItem>
@@ -81,7 +90,7 @@ export default function CarouselHome ({
       <CarouselNext className="right-5" />
 
       <div className="absolute bottom-5 left-0 right-0 flex justify-center space-x-2">
-        {items.map((src, idx) => (
+        {items.map((_, idx) => (
           <div
             className={`w-2 h-2 rounded-full 
             ${idx === activeIndex ? "bg-blue-300 bg-opacity-50" : "bg-gray-200 bg-opacity-25"}`}
@@ -92,11 +101,6 @@ export default function CarouselHome ({
           </div>
         ))}
       </div>
-
-      {/* Display current index for debugging */}
-      {/* <p className="absolute top-5 right-5 text-white">
-        Current Index: {activeIndex}
-      </p> */}
     </Carousel>
   );
 }
