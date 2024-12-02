@@ -28,9 +28,9 @@ export async function DELETE(req: Request, { params }: { params: { slug: string 
     try {
         const { slug } = params;
 
-         // First, checking if the post exists
-         const existingPost = await prisma.newsData.findFirst({
-            where: { slug },  // Querying by slug
+        // First, checking if the post exists by slug
+        const existingPost = await prisma.newsData.findFirst({
+            where: { slug },
         });
 
         // If the post doesn't exist, return a 404 error
@@ -38,17 +38,17 @@ export async function DELETE(req: Request, { params }: { params: { slug: string 
             return NextResponse.json({ message: 'News post not found' }, { status: 404 });
         }
 
-        // Fetching the news post using the unique slug with findFirst
-        const deletePost = await prisma.newsData.delete({
-            where: { slug },  // Querying by slug
+        // Deleting the post using the unique slug
+        await prisma.newsData.delete({
+            where: { slug },
         });
-         console.log("deleted post sucessfully", deletePost)
-       
+
         return NextResponse.json({ message: 'News post deleted successfully' }, { status: 200 });
-    } catch (error :any) {
+    } catch (error) {
         console.error('Something went wrong:', error);
-        return NextResponse.json({ message: 'Could not deleted news post' }, { status: 500 });
+        return NextResponse.json({ message: 'Could not delete news post' }, { status: 500 });
     }
 }
+
 
 
