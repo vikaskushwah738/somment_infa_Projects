@@ -1,7 +1,6 @@
 import CarouselHome from "@/components/HomeCarousel";
-import OurClient from "@/components/OurClient";
 import Image from 'next/image';
-import Gallerys from '@/public/gallery.png'
+
 export default function Gallery() {
     return (
         <main className="lg:pt-28 md:pt-24 pt-20">

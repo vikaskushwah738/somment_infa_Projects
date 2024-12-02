@@ -1,6 +1,6 @@
 import SideBar from "./components/SideBar";
 import Image from 'next/image';
-import services from '@/public/tech-city.png'
+
 export default function Layout({ children }: any) {
     return (
         <main>
