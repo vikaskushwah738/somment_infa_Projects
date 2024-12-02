@@ -1,11 +1,14 @@
 import { prisma } from "@/prisma/prisma";
 import { NextResponse } from "next/server";
 
+// Define Params type explicitly
+type Params = { slug: string };
+
 // GET handler for fetching the news post
-export async function GET(req: Request, { params }: { params: { slug: string } }): Promise<NextResponse> {
+export async function GET(req: Request, { params }: { params: Params }): Promise<NextResponse> {
     try {
         const { slug } = params;
-        
+
         // Fetch the news post using the unique slug with findFirst
         const news_post = await prisma.newsData.findFirst({
             where: { slug },  // Querying by slug
@@ -24,7 +27,7 @@ export async function GET(req: Request, { params }: { params: { slug: string } }
 }
 
 // DELETE handler for deleting the news post
-export async function DELETE(req: Request, { params }: { params: { slug: string } }): Promise<NextResponse> {
+export async function DELETE(req: Request, { params }: { params: Params }): Promise<NextResponse> {
     try {
         const { slug } = params;
 
