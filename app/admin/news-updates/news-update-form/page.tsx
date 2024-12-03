@@ -1,23 +1,25 @@
 'use client'
 import Image from 'next/image'
 import { toast, } from 'react-hot-toast';
-import { useState, useRef, useMemo } from "react";
+import { useState,  useEffect } from "react";
 import { CldUploadButton, CloudinaryUploadWidgetResults } from 'next-cloudinary';
 import { IoMdImage } from "react-icons/io";
 import dynamic from 'next/dynamic';
 import Category from '../../components/Category';
+import "react-quill/dist/quill.snow.css";
 
-const JoditEditor = dynamic(() => import('jodit-react'), { ssr: false });
+const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
+
 
 export default function NewsForm() {
-  const editor = useRef(null);
   const [content, setContent] = useState('');
   const [title, setTitle] = useState('');
   const [slug, setSlug] = useState('');
-  const [category, setCategory] = useState(' ');
+  const [category, setCategory] = useState('');
   const [description, setNewsDescription] = useState('');
   const [imageUrl, setImageUrl] = useState('');
   const [publicId, setPublicId] = useState('');
+  const [isEditorReady, setIsEditorReady] = useState(false);
 
   function handleImageUpload(result: CloudinaryUploadWidgetResults) {
     console.log('result: ', result)
@@ -66,6 +68,11 @@ export default function NewsForm() {
       .replace(/[^\w\s]+/g, '') // Remove special characters (keep alphanumeric and spaces)
       .replace(/\s+/g, '-') // Replace spaces with hyphens
 
+      if (!formattedSlug) {
+        toast.error("Slug cannot be empty");
+        return;
+      }
+
     const res = await fetch('/api/news-upload', {
       method: 'POST',
       headers: {
@@ -89,10 +96,10 @@ export default function NewsForm() {
       toast.error('Somethink went wrong please try again', { id: toastId })
     }
   };
-  const config = useMemo(() => ({
-    readonly: false,
-    placeholder: 'Start typing you content...',
-  }), []);
+  
+  useEffect(() => {
+    setIsEditorReady(true);
+  }, []);
 
 
   return (
@@ -163,18 +170,20 @@ export default function NewsForm() {
               <Category />
             </select>
           </div>
+          {/* react quills */}
           <div className="pb-2 z-20">
             <label htmlFor="content" className="flex text-blue-950 mb-1 gap-1">
               Content <span className="text-red-700">*</span>
             </label>
-            <JoditEditor
-              ref={editor}
-              value={content}
-              config={config}
-              onBlur={newContent => setContent(newContent)} // preferred to use only this option to update the content for performance reasons
-              onChange={setContent}
-              className='w-full overflow-x-hidden bg-gray-100'
-            />
+            {isEditorReady && (
+              <ReactQuill
+                value={content}
+                onChange={setContent}
+                theme="snow"
+                
+              />
+            )}
+
           </div>
           <div className='pb-2 w-full '>
             <CldUploadButton

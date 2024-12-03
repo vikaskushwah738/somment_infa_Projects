@@ -9,15 +9,26 @@ interface NewsCardProps {
   slug: string;
   description: string;
   publicId: string;
- 
+
 }
 
-export default function AdminNewsCard({ imageUrl, content, title,  slug }: NewsCardProps) {
+export default function AdminNewsCard({ imageUrl, content, title, slug }: NewsCardProps) {
 
   return (
 
     <div className="w-64 h-[400px]  rounded-xl overflow-hidden shadow-lg hover:shadow-xl mt-10">
-      <Image src={imageUrl} alt={title} className="w-full h-44 object-cover " />
+      <div className='relative h-40 w-full'>
+        <Image
+          src={imageUrl}
+          alt={title}
+          fill
+          style={{ objectFit: 'fill' }}
+          className="object-cover"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+
       <div className="pt-5 px-5 pb-4">
         <h2 className="text-lg font-semibold mb-2">
           {title.length > 40
